@@ -115,7 +115,7 @@ ul {
 
 .about h2 {
     font-size: 55px;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 .about h1 {
@@ -165,7 +165,7 @@ ul {
     color: #2563eb;
 }
 
-.box-content {
+.box-content{
     background-color: #f3f4f6;
     color: #111827;
     width: 300px;
@@ -177,9 +177,10 @@ ul {
 }
 
 .box-content:hover {
-    box-shadow: #2563eb 0px 30px 60px -12px inset, 0px 18px 36px -18px inset;
-    transition: 0.3s;
+    /* border:2px solid #2563eb; */
+    box-shadow: #2563eb 0px 1px 4px, #2563eb 0px 0px 0px 3px;    transition: 0.5s;
     transform: scale(1.08);
+    background-color: #d7deec;
 }
 
 .box-content h2 {
@@ -447,7 +448,23 @@ ft button {
     border-radius: 6px;
     cursor: pointer;
 }
+.hero-image {
+  animation: float 6s ease-in-out infinite;
+}
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 @media only screen and (max-width:1024px) {
     .navbar-brand {

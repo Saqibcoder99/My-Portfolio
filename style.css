@@ -622,14 +622,20 @@ font-size: 10px;
  .box-content{
     width: 360px;
  }
+
  .project-cards{
-    grid-template-columns: repeat(1,1fr);
-    padding: 70px 35px;
-    gap: 50px;
+display: flex;
+flex-direction: column;
+  padding: 0px;
+  width: 100%;
+  height: 3000px;
+  align-items: center;
+  padding-bottom: 50px;
 }
  .project{
     width: 360px;
- }  
+    margin-top: 30px;
+}  
  .projects-links h1{
     font-size: 22px;
  } 
@@ -677,12 +683,18 @@ ft button {
     height: 280px;
     width: 280px;
 }
-
+.about h2{
+    font-weight: normal;
+}
     .resume h2,.contact h1,.service-section h1,.projects-section h1{
     font-size: 40px;
  }
     .box-content,.project{
         width: 320px;
+    }
+    .box-content:hover{
+            transform: scale(1.04);
+
     }
 .projects-links h1{
     font-size: 20px;
@@ -690,7 +702,9 @@ ft button {
 form {
     padding: 40px 20px;
 }
-
+.user-about input{
+    width: 260px;
+}
 .contact button{
     font-size: 0.9rem;
 }

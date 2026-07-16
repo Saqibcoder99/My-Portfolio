@@ -26,12 +26,9 @@ gsap.from(".left-side", {
   duration: 1, ease: "power2.out"
 });
 
-ScrollTrigger.create({
-  trigger: ".main",
-  start: "top 80%",
-  onEnter: (e) => {
 gsap.utils.toArray(".main").forEach((heading) => {
   gsap.from(heading, {
+    y: 30,
   filter: "blur(20px)", opacity: 0, scale: 0.9,
   duration: 1.5, ease: "power2.out",
     scrollTrigger: {
@@ -39,7 +36,4 @@ gsap.utils.toArray(".main").forEach((heading) => {
       start: "top 80%",
     }
   });
-});
-
-}
 });

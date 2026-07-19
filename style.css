@@ -22,7 +22,7 @@ ul {
 .nav-item a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .nav-link:hover {
@@ -40,7 +40,7 @@ ul {
 
 .navbar-brand>h2 {
     font-family: "Outfit", sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
 }
 
@@ -230,8 +230,12 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     padding: 70px 120px;
     gap: 50px;
-
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
 }
+
 
 .project {
     height: 350px;
@@ -553,6 +557,7 @@ ft button {
     }
     .project-cards{
         grid-template-columns: repeat(2,1fr);
+        height: auto;
     }
 
     form{
